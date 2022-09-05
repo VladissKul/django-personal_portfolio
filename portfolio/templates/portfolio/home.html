@@ -2,19 +2,31 @@
 {% load static %}
 {% block content %}
 
-<div class="row justify-content-center my-3">
+<div class="row justify-content-left my-3">
     <div class="col-5">
-        <img src="{% static 'portfolio/IMG_0372.jpg' %}" class="img-fluid">
+        <img src="{% static 'portfolio/IMG_0372.jpg' %}" class="img-fluid" style="border-radius: 25px">
+    </div>
+    <div class="text-description">
+        <p class="font-weight" style="font-size: 23px; line-height:70%">Кулаков Владислав Владимирович, 20 лет</p>
+        <p class="font-weight" style="font-size: 20px; line-height:70%">Желаемая должность: Программист Python</p>
+        <p class="font-weight" style="font-size: 20px; line-height:70%">Ключевые навыки:</p>
+           <ul>
+             <li>Python, в том числе ООП, тестирование</li>
+             <li>Django</li>
+               <li>Flask (базовый уровень)</li>
+             <li>SQL</li>
+             <li>Умение работать в командной строке linux</li>
+             <li>Git, GitHub</li>
+             <li>Понимание основных алгоритмов и структур данных</li>
+             <li>MS Office (Excel, Docs), Google Office</li>
+             <li>Чтение технической документации</li>
+             <li>json, csv</li>
+               <li>HTML5, CSS3</li>
+        </ul>
     </div>
 </div>
 
-<div class="row justify-content-center mb-3">
-    <div class="col-md-12 text-center">
-        <h1 id="hometext" class="font-weight">Этот сайт - портфолио начинающего программиста Кулакова В.В.</h1>
-    </div>
-</div>
-
-<h2 class="mt-5 text-center">Портфолио</h2>
+<h2 class="mt-5 text-center">Pet-проекты</h2>
 <hr>
 <div class="row">
     {% for project in projects %}

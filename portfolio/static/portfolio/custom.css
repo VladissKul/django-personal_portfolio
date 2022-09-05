@@ -6,12 +6,6 @@
     color: rgba(255,0,0,.5) !important;
 }
 
-
-body {
-    font-family: 'Lato', sans-serif;
-    #background: url("/static/portfolio/abs.png") 50% 0 no-repeat fixed;
-}
-
 #blogtitle {
     font-size: 6rem;
 }
@@ -28,5 +22,20 @@ body {
 .myColor
 {
     color:white;
+}
+
+body
+{
+    background-image: url(bg.jpg);
+    backdrop-filter: blur(10px);
+    color: #fffef0;
+    font-family: 'Ubuntu', sans-serif;
+
+.img-fluid {
+    border-radius: 20px;
+}
+
+.text-description {
+    color: #fffef0;
 }
 
